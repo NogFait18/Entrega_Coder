@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Winky Sans", sans-serif;
+}
+body{
+    background-image: url(/images/background_burger.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+nav{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img{
+    width: 60px;
+    height: 60px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 490px) {
+    nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.main-index {
+    margin: 10vh;
+}
+.section1-index h1,p,a{
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.section1-index h1{
+    font-size: 60px;
+}
+.section1-index p{
+    font-size: 20px;
+}
+.section1-index a{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+
+.header-productos{
+    margin-bottom: 50px;
+}
+.section1-productos{
+    text-align: center;
+}
+.section1-productos h1{
+    font-size: 60px;
+}
+.section2-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.section2-productos img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+.section1-nosotros{
+    text-align: center;
+}
+.section1-nosotros h1{
+    text-align: center;
+    font-size: 60px;
+}
+.section2-nosotros{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section2-nosotros img{
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+}
+.main-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-contacto h1{
+    font-size:60px ;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    background-color: brown;
+    border-radius: 20px;
+    margin: 20px;
+}
+.form label{
+    text-align: center;
+    font-size: 20px;
+}
+.form input{
+    margin: 20px;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: none;
+}
