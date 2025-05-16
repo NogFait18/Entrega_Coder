@@ -5,7 +5,7 @@
     font-family: "Winky Sans", sans-serif;
 }
 body{
-    background-image: url(./images/background_burger.png);
+    background-image: url(../images/background_burger.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
