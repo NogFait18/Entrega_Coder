@@ -141,6 +141,11 @@ nav a{
 }
 .featured-products .product-list .product{
     transition: 0.3s;
+    width: 20rem;
+}
+.featured-products .product-list .product img{
+    transition: 0.3s;
+    width: 100%;
 }
 .featured-products .product-list .product:hover{
     transition: 0.3s;
@@ -252,4 +257,68 @@ nav a{
     height: 5vh;
     border-radius: 20px;
     border: none;
+}
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 576px) {
+    .featured-products .product-list .product{
+    width: 15rem;
+}
+}
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+.main-index, .section1-index, .featured-products, .main-contacto {
+    margin: 20px;
+    padding: 10px;
+}
+
+.section1-index h1,
+.section1-productos h1,
+.section1-nosotros h1,
+.main-contacto h1 {
+    font-size: 36px;
+}
+
+.section1-index p,
+.section1-productos p,
+.section1-nosotros p {
+    font-size: 16px;
+}
+
+.section1-index a {
+    min-width: 100px;
+    font-size: 1rem;
+    height: 3rem;
+}
+
+.featured-products .product-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2-productos {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2-productos img {
+    width: 80%;
+    height: auto;
+}
+
+.form input {
+    width: 80vw;
+}
+
+
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+.featured-products .product-list {
+    gap: 20px;
+}
+
+.form input {
+    width: 60vw;
+}
+}
 }
