@@ -324,8 +324,8 @@ footer{
     .section1-index,
     .featured-products,
     .main-contacto {
-        margin: 20px;
-        padding: 10px;
+        margin-top: 20px;
+        padding-top: 10px;
     }
 
     .section1-index h1,
@@ -353,7 +353,7 @@ footer{
     .featured-products .product-list {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 40px;
     }
 
     .section2-productos {
