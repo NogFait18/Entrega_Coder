@@ -1,0 +1,14 @@
+# Ignorar carpetas
+node_modules/
+dist/
+build/
+
+# Ignorar archivos
+.env
+*.log
+*.class
+*.pyc
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
