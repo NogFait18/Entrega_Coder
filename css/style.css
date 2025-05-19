@@ -1,33 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Winky Sans", sans-serif;
 }
-body{
+body {
     background-image: url(../images/background_burger.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
 }
 
-nav{
+nav {
     margin: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-nav img{
+nav img {
     width: 60px;
     height: 60px;
 }
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
+    padding-left: 0;
 }
-nav li{
+nav li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,36 +37,42 @@ nav li{
     text-align: center;
     margin: 10px;
     border-radius: 10px;
-    text-decoration: none;
     transition: 0.3s;
 }
-nav li:hover{
-    transition: 0.2s;
+nav li:hover {
     transform: rotate(10deg);
     cursor: pointer;
 }
-nav a{
+nav a {
     color: white;
     text-decoration: none;
 }
+
 @media (max-width: 490px) {
-    nav{
+    nav {
         justify-content: center;
         flex-wrap: wrap;
     }
-    nav ul{
+    nav ul {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
+
 .main-index {
     margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.section1-index h1,p,a{
+
+
+.section1-index h1, .section1-index p, .section1-index a {
     margin: 20px;
     flex-wrap: wrap;
 }
-.section1-index h1{
+.section1-index h1 {
     text-align: center;
     color: white;
     display: inline-block;
@@ -74,7 +80,7 @@ nav a{
     border-radius: 10px;
     font-size: 60px;
 }
-.section1-index p{
+.section1-index p {
     text-align: center;
     color: white;
     display: inline-block;
@@ -82,154 +88,135 @@ nav a{
     border-radius: 10px;
     font-size: 20px;
 }
-.section1-index a{
-    display: inline-flex;    
-    justify-content: center; 
-    align-items: center;     
+.section1-index a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    white-space: nowrap;     
+    white-space: nowrap;
     background-color: black;
     color: white;
-    font-size: 1.3rem;       
+    font-size: 1.3rem;
     border-radius: 20px;
     text-decoration: none;
-    width: auto;            
-    min-width: 120px;       
-    height: 3.5rem;        
-    padding: 0 1rem;       
+    min-width: 120px;
+    height: 3.5rem;
+    padding: 0 1rem;
     box-sizing: border-box;
-    transition: background-color 0.3s ease;
-    transition: 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s;
 }
-.section1-index a:hover{
-    transition: 0.3s;
+.section1-index a:hover {
     transform: scale(1.1);
-    
 }
 
-.featured-products h2{
+.featured-products h2 {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
 
-.featured-products .product-list{
+.featured-products .product-list {
     display: flex;
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
 }
-.featured-products .product-list .product{
+.featured-products .product-list .product {
     text-align: center;
     background-color: brown;
     color: white;
-    display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    
-}
-.featured-products .product-list .product h3,p{
-    flex-wrap:wrap ;
-}
-.featured-products .product-list .product img{
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    height: 30vh;
-    width: min-content;
-    flex-wrap:wrap ;
-}
-.featured-products .product-list .product{
-    transition: 0.3s;
+    transition: transform 0.3s;
     width: 20rem;
 }
-.featured-products .product-list .product img{
-    transition: 0.3s;
-    width: 100%;
-}
-.featured-products .product-list .product:hover{
-    transition: 0.3s;
+.featured-products .product-list .product:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+.featured-products .product-list .product h3, 
+.featured-products .product-list .product p {
+    flex-wrap: wrap;
+}
+.featured-products .product-list .product img {
+    border-radius: 10px;
+    height: 30vh;
+    width: 100%;
+    transition: width 0.3s;
+}
 
-.header-productos{
+.header-productos {
     margin-bottom: 50px;
 }
-.section1-productos{
+.section1-productos {
     text-align: center;
 }
-.section1-productos h1{
-    text-align: center;
+.section1-productos h1 {
     color: white;
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     font-size: 60px;
 }
-.section1-productos p{
-    text-align: center;
+.section1-productos p {
     color: white;
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 10px;
 }
-.section2-productos{
+.section2-productos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
-.section2-productos img{
+.section2-productos img {
     width: 200px;
     height: 200px;
     border-radius: 15px;
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
-.section2-productos img:hover{
-    transition-duration: 0.3s;
+.section2-productos img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-.section1-nosotros{
+
+.section1-nosotros {
     text-align: center;
 }
-.section1-nosotros h1{
-    text-align: center;
+.section1-nosotros h1 {
     color: white;
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     font-size: 60px;
 }
-.section1-nosotros p{
-    text-align: center;
+.section1-nosotros p {
     color: white;
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 10px;
 }
-.section2-nosotros .card{
+.section2-nosotros{
+    padding-top: 40px;
+}
+.section2-nosotros .card {
     background-color: brown;
     text-align: center;
     color: white;
+    transition: transform 0.3s;
 }
-
-.section2-nosotros div{
-    transition: 0.3s;
-}
-.section2-nosotros div:hover{
-    transition: 0.3s;
+.section2-nosotros div:hover {
     transform: scale(1.05);
 }
-.main-contacto{
+.main-contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
 }
-.main-contacto h1{
+.main-contacto h1 {
     background-color: brown;
     color: white;
     display: inline-block;
@@ -245,80 +232,196 @@ nav a{
     background-color: brown;
     border-radius: 20px;
     margin: 20px;
-    
 }
-.form label{
+.form label {
     text-align: center;
     font-size: 20px;
 }
-.form input{
+.form input {
     margin: 20px;
     width: 30vw;
     height: 5vh;
     border-radius: 20px;
     border: none;
+    transition: width 0.3s;
 }
-/* Para pantallas pequeñas (celulares) */
-@media (max-width: 576px) {
-    .featured-products .product-list .product{
-    width: 15rem;
+footer{
+    padding-top: 8%;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 440px) {
+    .main-index .section1-index .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 }
-/* Para pantallas pequeñas (celulares) */
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+
+    /* Ajustes para productos destacados (si aplica en otro componente) */
+    .featured-products .product-list .product {
+        width: 15rem;
+    }
+
+    /* Sección "Nuestro Equipo" – Grilla responsive */
+    .section2-nosotros .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        gap: 1.5rem; /* Espacio entre tarjetas */
+    }
+
+    .section2-nosotros .col {
+        width: 100%;
+        max-width: 22rem;
+        height: auto;
+    }
+
+    .section2-nosotros .col img {
+        height: auto;
+        max-height: 15rem;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .section2-nosotros .card-title {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .section2-nosotros .card-text {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    /* Ajustes adicionales para encabezado de la sección */
+    .section1-nosotros h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .section1-nosotros p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        text-align: justify;
+    }
+    footer p {
+        font-size: 0.75rem;
+        text-align: center;
+        padding-top: 3rem;
+    }
+}
+
 @media (max-width: 768px) {
-.main-index, .section1-index, .featured-products, .main-contacto {
-    margin: 20px;
-    padding: 10px;
+    .main-index,
+    .section1-index,
+    .featured-products,
+    .main-contacto {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .section1-index h1,
+    .section1-productos h1,
+    .section1-nosotros h1,
+    .main-contacto h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .section1-index p,
+    .section1-productos p,
+    .section1-nosotros p {
+        font-size: 16px;
+        padding: 0 1rem;
+        text-align: justify;
+    }
+
+    .section1-index a {
+        min-width: 100px;
+        font-size: 1rem;
+        height: 3rem;
+    }
+
+    .featured-products .product-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .section2-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section2-productos img {
+        width: 80%;
+        height: auto;
+    }
+
+    .form input {
+        width: 80vw;
+    }
+
+    /* ------------------------------ */
+    /* SECCIÓN NOSOTROS RESPONSIVE   */
+    /* ------------------------------ */
+    .section2-nosotros {
+        padding-top: 50px;
+    }
+
+    .section2-nosotros .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .section2-nosotros .col {
+        width: 100%;
+        max-width: 22rem;
+        height: auto;
+    }
+
+    .section2-nosotros .col img {
+        width: 100%;
+        height: auto;
+        max-height: 15rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    .section2-nosotros .card-body {
+        text-align: center;
+    }
+
+    .section2-nosotros .card-title {
+        font-size: 1.25rem;
+    }
+
+    .section2-nosotros .card-text {
+        font-size: 0.9rem;
+        text-align: justify;
+        padding: 0 0.5rem;
+    }
 }
 
-.section1-index h1,
-.section1-productos h1,
-.section1-nosotros h1,
-.main-contacto h1 {
-    font-size: 36px;
-}
-
-.section1-index p,
-.section1-productos p,
-.section1-nosotros p {
-    font-size: 16px;
-}
-
-.section1-index a {
-    min-width: 100px;
-    font-size: 1rem;
-    height: 3rem;
-}
-
-.featured-products .product-list {
-    flex-direction: column;
-    align-items: center;
-}
-
-.section2-productos {
-    flex-direction: column;
-    align-items: center;
-}
-
-.section2-productos img {
-    width: 80%;
-    height: auto;
-}
-
-.form input {
-    width: 80vw;
-}
-
-
-
-/* Para pantallas medianas (tablets) */
 @media (max-width: 1024px) {
-.featured-products .product-list {
-    gap: 20px;
-}
-
-.form input {
-    width: 60vw;
-}
-}
+    .form input {
+        width: 60vw;
+    }
+    .section2-nosotros .col{
+        max-height: 70vh;
+    }
+    .section2-nosotros .col p{
+        font-size:small;
+    }
 }
