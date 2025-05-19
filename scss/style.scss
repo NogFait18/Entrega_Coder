@@ -1,0 +1,124 @@
+    $color-fondo: #fffaf3;
+    $color-primario: #e07a5f;
+    $color-secundario: #81b29a;
+    $color-texto: #3d3d3d;
+    $color-titulo: #2d2d2d;
+    $color-card: #fef2e6;
+    $color-borde: #e0c9a6;
+
+    .body-resenias {
+    font-family: "Winky Sans", sans-serif;
+    background-color: $color-fondo;
+    margin: 0;
+    padding: 0;
+    }
+
+    .main-resenias {
+    padding: 2rem;
+    }
+
+    .header-nosotros {
+    background-color: $color-primario;
+    padding: 1rem 2rem;
+    }
+
+    .section-resenias {
+    margin-top: 2rem;
+
+    .titulo-resenias {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-titulo;
+    text-align: center;
+    margin-bottom: 2rem;
+    }
+
+    .contenedor-comentarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); // ✅ soporte para pantallas chicas
+    gap: 1.5rem;
+    }
+
+    .comentario {
+    .card {
+        background-color: $color-card;
+        border: 1px solid $color-borde;
+        border-radius: 15px;
+        padding: 1.2rem;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+        transform: scale(1.02);
+        }
+
+        .comentario-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        strong {
+            color: $color-primario;
+            font-size: 1.1rem;
+        }
+
+        span {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .estrellas {
+            font-size: 1.1rem;
+            color: #ffb703;
+        }
+        }
+
+        p {
+        color: $color-texto;
+        font-size: 1rem;
+        line-height: 1.4;
+        overflow-y: auto;
+        }
+    }
+    }
+    }
+
+    // Responsive ajustes
+    @media (max-width: 480px) {
+    .main-resenias {
+    padding: 1rem;
+    }
+
+    .section-resenias {
+    .titulo-resenias {
+        font-size: 1.5rem;
+    }
+
+    .contenedor-comentarios {
+        grid-template-columns: 1fr;
+    }
+
+    .comentario .card {
+        height: auto;
+        padding: 1rem;
+
+        .comentario-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        strong, span, .estrellas {
+            font-size: 1rem;
+        }
+        }
+
+        p {
+        font-size: 0.95rem;
+        }
+    }
+    }
+    }

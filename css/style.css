@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Winky Sans", sans-serif;
+    
 }
 body {
     background-image: url(../images/background_burger.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    
 }
 
 nav {
