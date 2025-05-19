@@ -41,7 +41,7 @@ nav li {
     border-radius: 10px;
     transition: 0.3s;
 }
-nav li:active {
+nav li:hover {
     transform: rotate(10deg);
     cursor: pointer;
 }
